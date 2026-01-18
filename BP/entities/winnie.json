@@ -8,30 +8,60 @@
             "is_experimental": false
         },
         "components": {
-            "minecraft:physics": {},
+            "minecraft:type_family": {
+                "family": [
+                    "winnie",
+                    "mob",
+                    "aquatic"
+                ]
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0,
+                "breathes_air": true,
+                "breathes_water": false
+            },
+            "minecraft:collision_box": {
+                "width": 0.9,
+                "height": 0.6
+            },
+            "minecraft:health": {
+                "value": 30,
+                "max": 30
+            },
+            "minecraft:movement": {
+                "value": 1.2
+            },
+            "minecraft:underwater_movement": {
+                "value": 1.2
+            },
+            "minecraft:navigation.swim": {
+                "can_path_over_water": true,
+                "can_breach": true,
+                "can_jump": true,
+                "can_pass_doors": true,
+                "can_open_doors": true,
+                "can_open_iron_doors": false
+            },
+            "minecraft:movement.swim": {
+                "max_turn": 30
+            },
+            "minecraft:jump.dynamic": {},
+            "minecraft:physics": {
+                "has_gravity": true,
+                "has_collision": true
+            },
             "minecraft:pushable": {
                 "is_pushable": true,
                 "is_pushable_by_piston": true
             },
-            "minecraft:movement": {
-                "value": 0.25
-            },
-            "minecraft:movement.basic": {},
-            "minecraft:jump.static": {},
-            "minecraft:can_climb": {},
-            "minecraft:collision_box": {
-                "width": 0.6,
-                "height": 1.8
-            },
-            "minecraft:health": {
-                "value": 20,
-                "max": 20
-            },
-            "minecraft:type_family": {
-                "family": [
-                    "winnie",
-                    "mob"
-                ]
+            "minecraft:behavior.random_swim": {
+                "priority": 2,
+                "speed_multiplier": 1.0,
+                "xa": 1,
+                "ya": 1,
+                "za": 1,
+                "interval": 20
             }
         }
     }
