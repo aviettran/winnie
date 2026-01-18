@@ -1,0 +1,40 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Winnie Entity Behavior Pack",
+        "name": "Winnie BP",
+        "uuid": "2eb23ee2-9f62-4303-8fe0-fb5139ac11ce",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            21,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Winnie Entity Behavior",
+            "type": "data",
+            "uuid": "c5f6686f-d3ea-4927-9673-8af19cedac7a",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "99ecc7c9-7d62-49c3-a205-175041e1c964",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

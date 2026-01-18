@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "aviettran:winnie",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/winnie"
+            },
+            "geometry": {
+                "default": "geometry.winnie"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}
