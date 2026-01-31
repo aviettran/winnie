@@ -19,7 +19,7 @@
                 "total_supply": 15,
                 "suffocate_time": 0,
                 "breathes_air": true,
-                "breathes_water": true
+                "breathes_water": false
             },
             "minecraft:collision_box": {
                 "width": 0.9,
@@ -54,6 +54,10 @@
             "minecraft:pushable": {
                 "is_pushable": true,
                 "is_pushable_by_piston": true
+            },
+            "minecraft:behavior.breath_air": {
+                "priority": 1,
+                "drown_time": 10
             },
             "minecraft:behavior.random_swim": {
                 "priority": 2,
