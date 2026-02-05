@@ -16,7 +16,7 @@
                 ]
             },
             "minecraft:breathable": {
-                "total_supply": 15,
+                "total_supply": 240,
                 "suffocate_time": 0,
                 "breathes_air": true,
                 "breathes_water": false
@@ -30,18 +30,18 @@
                 "max": 30
             },
             "minecraft:movement": {
-                "value": 1.2
+                "value": 0.1
             },
             "minecraft:underwater_movement": {
-                "value": 1.2
+                "value": 0.15
             },
-            "minecraft:navigation.swim": {
+            "minecraft:navigation.generic": {
+                "is_amphibious": true,
                 "can_path_over_water": true,
+                "can_swim": true,
+                "can_walk": false,
                 "can_breach": true,
-                "can_jump": true,
-                "can_pass_doors": true,
-                "can_open_doors": true,
-                "can_open_iron_doors": false
+                "can_sink": false
             },
             "minecraft:movement.swim": {
                 "max_turn": 30
@@ -55,6 +55,14 @@
                 "is_pushable": true,
                 "is_pushable_by_piston": true
             },
+            "minecraft:buoyant": {
+                "base_buoyancy": 1.0,
+                "apply_gravity": true,
+                "liquid_blocks": [
+                    "minecraft:water",
+                    "minecraft:flowing_water"
+                ]
+            },
             "minecraft:behavior.swim_up_for_breath": {
                 "priority": 1
             },
@@ -64,6 +72,12 @@
                 "xz_dist": 10,
                 "y_dist": 7,
                 "interval": 20
+            },
+            "minecraft:behavior.random_breach": {
+                "priority": 6,
+                "interval": 50,
+                "xz_dist": 6,
+                "cooldown_time": 2.0
             }
         }
     }
