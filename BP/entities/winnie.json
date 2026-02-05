@@ -55,16 +55,14 @@
                 "is_pushable": true,
                 "is_pushable_by_piston": true
             },
-            "minecraft:behavior.breath_air": {
-                "priority": 1,
-                "drown_time": 10
+            "minecraft:behavior.swim_up_for_breath": {
+                "priority": 1
             },
             "minecraft:behavior.random_swim": {
                 "priority": 2,
                 "speed_multiplier": 1.0,
-                "xa": 1,
-                "ya": 1,
-                "za": 1,
+                "xz_dist": 10,
+                "y_dist": 7,
                 "interval": 20
             }
         }
